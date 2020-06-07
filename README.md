@@ -1,4 +1,4 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Use github-finder to find users in github.
 
 ## Available Scripts
 
