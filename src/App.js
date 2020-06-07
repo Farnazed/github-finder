@@ -7,7 +7,7 @@ import Search from './components/users/Search';
 import Alert from './components/layout/Alert';
 import About from './components/Page/About';
 import User from './components/users/User';
-
+import Home from './components/Page/Home';
 import GithubState from './context/github/GithubState';
 import AlertState from './context/alert/AlertState';
 
@@ -21,16 +21,7 @@ const App = () => {
             <div className="container">
               <Alert />
               <Switch>
-                <Route
-                  exact
-                  path="/"
-                  render={(props) => (
-                    <Fragment>
-                      <Search />
-                      <Users />
-                    </Fragment>
-                  )}
-                />
+                <Route exact path="/" component={Home} />
                 <Route exact path="/about" component={About} />
                 <Route exact path="/user/:login" component={User} />
               </Switch>
